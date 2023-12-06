@@ -36,7 +36,7 @@ while True:
         else:
             break
         # Step 8:
-        print(f'{median} is the median.')
+        print(f'{median} is the median.'.strip())
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
