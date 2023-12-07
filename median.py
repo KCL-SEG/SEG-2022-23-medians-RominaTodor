@@ -21,20 +21,18 @@ while True:
         size = len(numbers)
         # Step 2: 
         numbers.sort()
-        # Step 3:
-        lowerBoundIndex = int((size//float(2)) - float(1))
-        lowerBound = numbers[lowerBoundIndex]
-        # Step 4:
-        upperBoundIndex = int(lowerBoundIndex + float(1))
-        upperBound = numbers[upperBoundIndex]
         # Step 5:
         if size%2 == 0:
-            median = (lowerBound + upperBound)/float(2)
+            # Step 3:
+            middle1 = numbers[int((size//float(2)) - float(1))]
+            # Step 4:
+            middle2 = numbers[int(size//float(2))]
+            median = (middle1 + middle2)/float(2)
         # Step 6:
         else:
-            median = upperBound
+            median = numbers[int(size//float(2))]
         # Step 7:
-        print(numbers)
+        print(f'The median is: {median}')
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
