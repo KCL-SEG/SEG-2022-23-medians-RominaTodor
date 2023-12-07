@@ -15,7 +15,8 @@
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
-        numbers = [float(value) for value in input().split(",")]
+        input_string=input().strip()
+        numbers = [float(value) for value in input_string.split(",")]
         # Step 1: 
         size = len(numbers)
         # Step 2: 
