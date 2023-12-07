@@ -34,7 +34,7 @@ while True:
         else:
             median = upperBound
         # Step 7:
-        print(f'{int(median)} is the median.\n')
+        print(numbers)
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
