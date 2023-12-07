@@ -31,13 +31,10 @@ while True:
         if size%2 == 0:
             median = (lowerBound + upperBound)/float(2)
         # Step 6:
-        elif size%2 ==1:
+        else:
             median = upperBound
         # Step 7:
-        else:
-            break
-        # Step 8:
-        print(f'{median} is the median.', end="")
+        print(f'{int(median)} is the median.\n')
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
